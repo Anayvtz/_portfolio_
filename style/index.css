@@ -140,8 +140,8 @@ nav ul li a {
 }
 
 #aboutSection a:hover {
-    background-color: --bgBtnHover;
-    color: --clrBtnHoover;
+    background-color: var(--bgBtnHover);
+    color: var(--clrBtnHoover);
 }
 
 #galleryTitle {
