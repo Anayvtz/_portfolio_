@@ -272,8 +272,8 @@ nav ul li a {
 }
 
 #submit:hover {
-    background-color: --bgBtnHover;
-    color: --clrBtnHoover;
+    background-color: var(--bgBtnHover);
+    color: var(--clrBtnHoover);
 }
 
 footer {
@@ -331,8 +331,8 @@ footer a img {
     }
 
     nav ul li a:hover {
-        background-color: --bgBtnHover;
-        color: --clrBtnHoover;
+        background-color: var(--bgBtnHover);
+        color: var(--clrBtnHoover);
     }
 
     nav .hamburger:hover+ul,
