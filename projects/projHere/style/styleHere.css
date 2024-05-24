@@ -7,8 +7,7 @@
 body {
     background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%);
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    background-attachment: fixed;
 }
 
 .container {

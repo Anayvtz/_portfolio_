@@ -121,19 +121,22 @@ nav ul li a {
     height: 60px;
 }
 
-#projPic {
+/* #projPic {
     /* position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0; */
-    margin: 50px auto;
-    /*   box-shadow: 0px 0px 40px #00000066; */
+    right: 0; *
+margin: 50px auto;
+/*   box-shadow: 0px 0px 40px #00000066; *
 }
 
+*/
 #projPic img {
     width: 70vw;
     height: 70vh;
+    display: block;
+    margin: 50px auto;
 }
 
 footer {
