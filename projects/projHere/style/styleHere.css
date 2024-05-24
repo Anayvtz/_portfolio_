@@ -50,7 +50,6 @@ body {
 #formWrapper form #details {
     display: flex;
     justify-content: space-evenly;
-    /* margin-right: 15px; */
 }
 
 #formWrapper form #details .box {
@@ -60,8 +59,7 @@ body {
 #formWrapper form #details .box label {
     display: block;
     font: normal normal normal 16px/20px Varela Round;
-    /* color: #F9F9F9; */
-    color: black;
+    color: #F9F9F9;
     font-size: 0.7rem;
 }
 
@@ -73,8 +71,6 @@ body {
 }
 
 .btn input {
-    /* padding: 0px 15px; */
-    /* margin: 10px; */
     font-size: 0.6rem;
     background-color: white;
     border: 0;
@@ -84,8 +80,6 @@ body {
 
 #formWrapper form {
     display: flex;
-    /* margin-left: 15px; */
-    /* margin-right: 10px; */
     align-items: end;
     justify-content: center;
 }
@@ -93,12 +87,24 @@ body {
 @media (max-width:576px) {
     #formWrapper form {
         flex-direction: column;
-        /* align-items: center;
-        justify-content: center; */
+        align-items: center;
+        /*justify-content: center; */
     }
 
+    #formWrapper form #details {
+        flex-direction: column;
+    }
 
     #formWrapper form input {
         margin-bottom: 10px;
+    }
+
+    .btn input {
+        /* width: 170px; */
+        width: 360px;
+    }
+
+    #formWrapper form #details input {
+        width: 360px;
     }
 }
