@@ -9,36 +9,33 @@
     top: 0px;
     left: 0px;
     width: 100vw;
-    /* height: 590px; */
     height: 295px;
 }
 
 #formContainer {
     position: absolute;
     top: 80px;
-    /* left: 1056px; */
-    right: 296px;
-    /* width: 569px; */
-    width: 270px;
-    /*  height: 643px; */
+    right: 120px;
+    width: 300px;
     background-color: #1A1A1AD4;
     color: #ffffff;
 }
 
-#formContainer h1 {
-    margin: 35px 15px 10px;
-    /* font: normal normal 900 36px/53px Heebo; */
-    font: Heebo;
-    color: #FFFFFF;
-    font-size: 1.5rem;
+#formWrapper {
+    margin: 35px 25px 0px;
+    font-family: Heebo;
 }
 
-#formContainer p {
-    margin: 10px;
-    /* font: normal normal normal 20px/29px Heebo; */
-    font: Heebo;
+#formWrapper h1 {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+}
+
+#formWrapper p {
     color: #F9F9F9;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
 }
 
 #form {
@@ -47,30 +44,75 @@
 }
 
 .formBox {
-    margin: 7px 15px 0px;
+    margin-top: 7px;
 }
 
 .formBox label {
     display: block;
-    /* font: normal normal bold 16px/24px Heebo; */
-    font: Heebo;
     color: #FFFFFF;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 
 .formBox input {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    height: 26px;
+    border: 1px solid hotpink;
 }
 
 #submit {
-    margin: 20px 15px 70px;
+    margin: 20px 0px 70px;
 }
 
 #submit input {
     background-color: #D31C75;
     color: white;
-    font: Heebo;
     width: 85px;
     height: 27px;
+    border: 0;
+}
 
+@media (max-width:576px) {
+    #bg {
+        /* width: 100%; */
+        height: 38vh;
+    }
+
+    #formContainer {
+        right: 33.3%;
+        /* margin: 0 auto; */
+    }
+
+    #formContainer h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #formContainer p {
+        font-size: 1rem;
+        margin: 10px 0px 5px;
+        text-align: center;
+    }
+
+    #form {
+        margin-left: 15px;
+    }
+
+    .formBox label {
+        font-size: 0.9rem;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .formBox input {
+        height: 28px;
+    }
+
+    #submit {
+        margin: 20px 0px 15px;
+    }
+
+    #submit input {
+        width: 80px;
+        height: 33px;
+    }
 }
