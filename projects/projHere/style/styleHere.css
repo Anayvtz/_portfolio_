@@ -15,13 +15,7 @@ body {
     height: 100vh;
 }
 
-/* #text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-
-#text h1 {
+h1 {
     font: normal normal normal 160px/231px Satisfy;
     color: #FFFFFF;
     text-shadow: 0px 0px 36px #00000087;
@@ -29,41 +23,44 @@ body {
     text-align: center;
 }
 
-#text h2 {
+h2 {
     text-align: center;
     font: normal normal normal 32px/38px Varela Round;
     color: #FFFFFF;
     font-size: 1.5rem;
 }
 
-#text p {
+#explanatoryText p {
     text-align: center;
     font: normal normal normal 16px/20px Varela Round;
     color: #F9F9F9;
     font-size: 0.8rem;
 }
 
-#formWrapper {
+form {
     margin-top: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
-#formWrapper form #details {
+form #details {
     display: flex;
     justify-content: space-evenly;
 }
 
-#formWrapper form #details .box {
+form #details .box {
     margin: 0 10px;
 }
 
-#formWrapper form #details .box label {
+form #details .box label {
     display: block;
     font: normal normal normal 16px/20px Varela Round;
     color: #F9F9F9;
     font-size: 0.7rem;
 }
 
-#formWrapper form #details .box input {
+form #details .box input {
     background-color: #F6F6F624;
     background-repeat: no-repeat;
     border: 1px solid #FFFFFF;
@@ -78,33 +75,42 @@ body {
     height: 27px;
 }
 
-#formWrapper form {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-}
+
 
 @media (max-width:576px) {
-    #formWrapper form {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #explanatoryText {
+        width: 360px;
+        margin: 0 auto;
+    }
+
+    form {
         flex-direction: column;
         align-items: center;
-        /*justify-content: center; */
     }
 
-    #formWrapper form #details {
+    form #details {
         flex-direction: column;
     }
 
-    #formWrapper form input {
+    form input {
         margin-bottom: 10px;
     }
 
     .btn input {
-        /* width: 170px; */
         width: 360px;
     }
 
-    #formWrapper form #details input {
+    form #details input {
         width: 360px;
     }
+
 }
