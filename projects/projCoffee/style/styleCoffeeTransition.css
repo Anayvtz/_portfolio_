@@ -172,6 +172,7 @@ footer a img {
 
     nav ul {
         display: none;
+        /* background-color: black; */
         background-color: lightskyblue;
         position: absolute;
         right: 0;
