@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#bg {
+    background-image: url("./../images/pinkProjBg.png");
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    /* height: 590px; */
+    height: 295px;
+}
+
+#formContainer {
+    position: absolute;
+    top: 80px;
+    /* left: 1056px; */
+    right: 296px;
+    /* width: 569px; */
+    width: 270px;
+    /*  height: 643px; */
+    background-color: #1A1A1AD4;
+    color: #ffffff;
+}
+
+#formContainer h1 {
+    margin: 35px 15px 10px;
+    /* font: normal normal 900 36px/53px Heebo; */
+    font: Heebo;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+#formContainer p {
+    margin: 10px;
+    /* font: normal normal normal 20px/29px Heebo; */
+    font: Heebo;
+    color: #F9F9F9;
+    font-size: 0.8rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox {
+    margin: 7px 15px 0px;
+}
+
+.formBox label {
+    display: block;
+    /* font: normal normal bold 16px/24px Heebo; */
+    font: Heebo;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
+
+.formBox input {
+    font-size: 1.1rem;
+}
+
+#submit {
+    margin: 20px 15px 70px;
+}
+
+#submit input {
+    background-color: #D31C75;
+    color: white;
+    font: Heebo;
+    width: 85px;
+    height: 27px;
+
+}
