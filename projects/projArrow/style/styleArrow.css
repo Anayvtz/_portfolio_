@@ -9,25 +9,25 @@
   height: 70vh;
   z-index: 1;
 }
-
 #upperPart h1 {
   z-index: 2;
   position: absolute;
-  top: 200px;
-  /* left: 0px;
+  top: 100px;
+  left: 0px;
   right: 0px;
-  margin: 0 auto; */
+  margin: 0 auto;
   text-align: center;
   font: normal normal bold 86px/113px Assistant;
   color: #D3E10E;
   font-size: 2.8rem;
 }
-
 #upperPart p {
   z-index: 2;
   position: absolute;
-  top: 300px;
-  /* left: 170px; */
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
   text-align: center;
   font: normal normal normal 20px/26px Assistant;
   letter-spacing: 0px;
@@ -44,10 +44,10 @@
 }
 @media (max-width: 576px) {
   #upperPart h1 {
-    top: 50px;
+    top: 0px;
   }
   #upperPart p {
-    top: 150px;
+    top: 200px;
   }
 }
 form {
@@ -56,28 +56,23 @@ form {
   align-items: end;
   margin-top: 100px;
 }
-
-#details {
+form #details {
   display: flex;
 }
-
-.box {
+form #details .box {
   font: normal normal bold 16px/21px Assistant;
   color: #011560;
 }
-
-#details .box label {
+form #details .box label {
   display: block;
   font-size: 0.8rem;
 }
-
-#details .box input {
+form #details .box input {
   border: none;
   border-bottom: 1px solid #D3E10E;
   margin-right: 20px;
   width: 200px;
 }
-
 form input[type=submit] {
   background-color: #D3E10E;
   font: normal normal bold 22px/30px Assistant;
@@ -91,16 +86,22 @@ form input[type=submit] {
   form {
     flex-direction: column;
     align-items: center;
+    width: 50%;
+    margin: 0 auto;
   }
-  #details {
+  form #details {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
-  #details .box label {
+  form #details label {
     margin-top: 15px;
   }
-  #details .box input {
+  form #details input {
+    width: 100%;
     background-color: #E5EEFF;
     height: 25px;
+    margin-right: 0px;
   }
   form input[type=submit] {
     width: 200px;
