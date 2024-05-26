@@ -9,7 +9,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 15px;
-    margin: 0 auto;
 }
 
 #title {
@@ -72,6 +71,7 @@
 
 #formWrapper form .box input {
     width: 500px;
+    border: none;
 }
 
 #formWrapper form .box input[type="text"] {
@@ -95,6 +95,7 @@
 
 #formWrapper form .box textarea {
     width: 500px;
+    border: none;
     border-bottom: 2px solid #0EE1DA;
 }
 
