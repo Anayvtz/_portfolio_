@@ -33,32 +33,15 @@
     border-radius: none;
 }
 
-/* .btn {
-    background-color: #020253 !important;
-    border-radius: none !important;
-} */
-
 .textAndForm input[type="submit"] {
     background-color: #020253;
     border-radius: none;
     font-family: Heebo;
     color: white;
     margin-top: 30px;
-
 }
 
 @media (max-width:768px) {
-    .textAndForm input[type="submit"] {
-        width: 417px;
-        margin-bottom: 50px;
-    }
-
-    img {
-        width: 100%;
-    }
-}
-
-@media (max-width:576px) {
     .textAndForm input[type="submit"] {
         width: 417px;
         margin-bottom: 50px;
