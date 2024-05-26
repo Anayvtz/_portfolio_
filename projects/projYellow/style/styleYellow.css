@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.rectangle {
+    width: 434px;
+    height: 18px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #FDBD03;
+}
+
+.whatsapp {
+    background-color: #FDBD03;
+    border-radius: 50%;
+    border: 10px solid #FDBD03;
+    width: 54px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 70px;
+}
+
+.container img {
+    height: 550px;
+}
+
+.formWrapper {
+    margin-top: 50px;
+}
+
+.formWrapper h1 {
+    font: normal normal 900 66px/97px Heebo;
+    color: #FDBD03;
+}
+
+.formWrapper p {
+    width: 400px;
+    margin-bottom: 20px;
+    font: normal normal normal 20px/29px Heebo;
+    color: #020253;
+}
+
+.formWrapper form .details {
+    display: flex;
+}
+
+.formWrapper form .details .box input {
+    margin-right: 15px;
+    height: 25px;
+}
+
+.formWrapper form .box label {
+    display: block;
+    font: normal normal bold 16px/24px Heebo;
+    color: #2C2C2C;
+    font-size: 0.8rem;
+}
+
+.formWrapper form .box input {
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 2px solid #FDBD03;
+}
+
+.formWrapper form .wideBox label {
+    margin-top: 10px;
+}
+
+.formWrapper form .wideBox input {
+    width: 355px;
+    height: 70px;
+}
+
+.formWrapper form input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    border: none;
+    background: #FDBD03;
+    font: normal normal bold 22px/30px Heebo;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: -160px;
+    left: 30px;
+}
+
+.icons img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #FDBD03;
+    border: 10px solid #FDBD03;
+    margin-right: 20px;
+}
+
+.bottomRectangle {
+    background-color: #FDBD03;
+    height: 18px;
+    width: 690px;
+    position: absolute;
+    bottom: -200px;
+    left: 0px;
+}
+
+@media (max-width:576px) {
+    .container {
+        flex-direction: column;
+    }
+}
