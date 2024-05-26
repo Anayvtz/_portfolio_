@@ -159,7 +159,6 @@ footer a img {
 @media (max-width:576px) {
     .hamburger {
         display: flex;
-        /* border-bottom: 1px solid #fff; */
         width: 40px;
         align-items: center;
         height: 100%;
