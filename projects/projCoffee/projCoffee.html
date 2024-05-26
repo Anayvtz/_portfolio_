@@ -15,9 +15,14 @@
 
 <body>
     <div class="container">
-        <div class="d-flex flex-column flex-md-row ">
+        <div class="d-flex flex-column flex-md-row g-0 vh-100">
 
-            <img src="./images/Coffee.png" alt="coffee" class="w-50">
+            <div class="col-md-7">
+                <img src="./images/Coffee.png" alt="" class="img-fluid h-100 w-100 object-fit-cover d-none d-md-block">
+                <div class="d-md-none ratio ratio-16x9">
+                    <img src="./images/Coffee.png" alt="" class="object-fit-cover">
+                </div>
+            </div>
 
             <div class="textAndForm w-50 ml-5">
                 <h1 class="mt-5 p-3">Good coffee for good morning</h1>
@@ -26,14 +31,14 @@
                 <form>
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" class="form-control rounded-0" id="name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control rounded-0" id="email">
                     </div>
 
-                    <input type="submit" class="btn" value="submit"></input>
+                    <input type="submit" class="btn rounded-0" value="submit"></input>
                 </form>
             </div>
 
