@@ -95,9 +95,12 @@
 
 .icons {
     display: flex;
+    justify-content: start;
+    align-items: end;
     position: absolute;
     bottom: -160px;
     left: 30px;
+    width: 100vw;
 }
 
 .icons img {
@@ -118,7 +121,7 @@
     left: 0px;
 }
 
-@media (min-width:576px) and (max-width:768px) {
+@media (max-width:768px) {
     .whatsapp {
         display: none;
     }
@@ -145,45 +148,10 @@
     }
 
     .icons {
+        justify-content: center;
+        align-items: end;
         bottom: -860px;
-        left: 150px;
-    }
-
-    .bottomRectangle {
-        bottom: -900px;
-    }
-}
-
-@media (max-width:576px) {
-
-    .whatsapp {
-        display: none;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .formWrapper {
-        margin-left: 20px;
-    }
-
-    .formWrapper form .details {
-        flex-direction: column;
-    }
-
-    .formWrapper form .details .box input {
-        width: 355px;
-    }
-
-    .formWrapper form input[type="submit"] {
-        width: 355px;
-        margin-top: 20px;
-    }
-
-    .icons {
-        bottom: -860px;
-        left: 80px;
+        left: 0px;
     }
 
     .bottomRectangle {
