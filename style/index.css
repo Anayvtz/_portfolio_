@@ -175,14 +175,13 @@ nav ul li a {
 .project {
     width: 300px;
     margin: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project img {
     display: block;
-    /*  width: 200px; */
     width: 100%;
-    /*  border: 1px solid #000; */
-    /* margin: 15px auto; */
 }
 
 .developIcons {
@@ -199,11 +198,19 @@ nav ul li a {
 }
 
 .project .projDesc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     padding: 20px;
     background-color: rgba(135, 206, 250, 0.5);
 }
 
+.project .projDesc .text {
+    height: 220px;
+}
+
 .project .projDesc p {
+    flex-grow: 1;
     width: 90%;
     margin: 0 auto;
     text-align: justify;
@@ -307,7 +314,6 @@ footer a img {
 @media (max-width:576px) {
     .hamburger {
         display: flex;
-        /* border-bottom: 1px solid #fff; */
         width: 40px;
         align-items: center;
         height: 100%;
