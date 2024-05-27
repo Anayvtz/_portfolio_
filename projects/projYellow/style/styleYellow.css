@@ -28,7 +28,9 @@
 .container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     margin-top: 70px;
+    width: 100vw;
 }
 
 .container img {
@@ -37,6 +39,8 @@
 
 .formWrapper {
     margin-top: 50px;
+    width: 100vw;
+    margin-left: 40px;
 }
 
 .formWrapper h1 {
@@ -136,6 +140,10 @@
 
     .formWrapper form .details {
         flex-direction: column;
+    }
+
+    .formWrapper form .details .box label {
+        margin-top: 10px;
     }
 
     .formWrapper form .details .box input {
