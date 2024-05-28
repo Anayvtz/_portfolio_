@@ -23,9 +23,9 @@ header {
     position: fixed;
     top: 0px;
     height: 64px;
-    background-color: rgb(135, 206, 250);
+    background-color: grey;
     width: 100%;
-    color: grey;
+    color: lightskyblue;
     z-index: 1;
 }
 
@@ -58,7 +58,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: grey;
+    color: lightskyblue;
     width: 100px;
     text-decoration: none;
     font-size: 1rem;
@@ -171,7 +171,8 @@ footer a img {
 
     nav ul {
         display: none;
-        background-color: lightskyblue;
+        background-color: grey;
+        color: lightskyblue;
         position: absolute;
         right: 0;
         top: 100%;
