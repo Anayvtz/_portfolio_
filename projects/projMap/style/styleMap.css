@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #0EE1E1;
+    height: 50vh;
+    width: 100vw;
+}
+
+.headerWrapper #header {
+    width: 600px;
+    height: 150px;
+}
+
+.headerWrapper #header h1 {
+    font: normal normal 900 66px/97px Heebo;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.headerWrapper #header p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #000000;
+}
+
+.headerWrapper>img {
+    display: block;
+}
+
+.headerWrapper .whatsapp {
+    width: 150px;
+}
+
+.headerWrapper img[src*="whatsapp"] {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+    top: 60px;
+}
+
+
+
+.headlines {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.headlines .area {
+    background-color: #F8F8F8;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headlines .area h1 {
+    font: normal normal 900 30px/44px Heebo;
+    color: #0EE1E1;
+    font-size: 1.5rem;
+}
+
+.headlines .area p {
+    font-family: Heebo;
+    color: black;
+    font-size: 0.8rem;
+    text-align: center;
+    display: block;
+    width: 200px;
+}
+
+.headlines .area a {
+    text-align: center;
+    color: black;
+}
+
+.headlines .area img {
+    width: 40px;
+    height: 40px;
+}
+
+.formAndMap {
+    display: flex;
+    margin-top: 60px;
+}
+
+.formAndMap>img {
+    width: 550px;
+    height: 550px;
+    border-top: 50px solid #0EE1E1;
+    border-bottom: 50px solid #0EE1E1;
+    border-left: 50px solid #0EE1E1;
+    border-right: none;
+}
+
+.formWrapper {
+    margin-left: 50px;
+    background-color: #F0FFFF;
+    width: 100vw;
+    height: 100vh;
+}
+
+.formWrapper h1 {
+    font: normal normal 900 46px/67px Heebo;
+    color: #090909;
+}
+
+.formWrapper p {
+    font: normal normal normal 15px/22px Heebo;
+    color: #000000;
+    display: block;
+    width: 350px;
+}
+
+.formWrapper form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formWrapper form label {
+    margin-top: 20px;
+    font: normal normal bold 13px/19px Heebo;
+    color: #2C2C2C;
+}
+
+.formWrapper form input {
+    background-color: #E5EEFF;
+    font-family: Heebo;
+    border: none;
+    border-bottom: 2px solid #0EE1E1;
+    width: 350px;
+    height: 40px;
+}
+
+.formWrapper form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #0EE1E1;
+    color: black;
+    letter-spacing: 0.3px;
+}
+
+.formWrapper form textarea {
+    background-color: #E5EEFF;
+    font-family: Heebo;
+    border: none;
+    border-bottom: 2px solid #0EE1E1;
+    width: 350px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    bottom: -720px;
+    left: 30px;
+    width: 100vw;
+}
+
+.icons img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #0EE1E1;
+    border: 15px solid #0EE1E1;
+    margin-right: 20px;
+}
+
+.bottomRectangle {
+    background-color: #0EE1E1;
+    height: 18px;
+    width: 100vw;
+    position: absolute;
+    bottom: -760px;
+    left: 0px;
+}
+
+
+@media (max-width:576px) {
+    .headerWrapper>img {
+        width: 80px;
+        height: 65px;
+        margin-left: 50px;
+    }
+
+    .headerWrapper img[src*="whatsapp"] {
+        display: none;
+    }
+
+    .headerWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 70vh;
+    }
+
+    .headerWrapper #header {
+        width: 100vw;
+        height: 150px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .headerWrapper #header h1 {
+        font: normal normal 900 33px/49px Heebo;
+    }
+
+    .headerWrapper #header p {
+        font: normal normal normal 15px/22px Heebo;
+        display: block;
+        width: 300px;
+    }
+
+    .headerWrapper .whatsapp {
+        display: none;
+    }
+
+    .headlines {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .headlines .area {
+        margin-top: 50px;
+    }
+
+    .formAndMap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    .formAndMap .formWrapper h1 {
+        font: normal normal 900 32px/47px Heebo;
+    }
+
+    .formAndMap .formWrapper p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    .formAndMap>img {
+        border-right: 50px solid #0EE1E1;
+    }
+
+    .icons {
+
+        bottom: -2160px;
+        left: 0px;
+    }
+
+    .bottomRectangle {
+        bottom: -2200px;
+    }
+}
