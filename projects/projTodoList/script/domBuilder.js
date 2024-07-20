@@ -3,6 +3,11 @@
 import { taskManager, editTask, tableBody } from "./todoListOOP.js";
 
 // functions
+function handleLineThrough(task, tdDesc) {
+    if (task.isComplete == true) {
+        tdDesc.style.textDecoration = "line-through";
+    }
+}
 export function addTaskToScreen(task, index) {
     //create the element
     let trRow = document.createElement("tr");
@@ -21,8 +26,9 @@ export function addTaskToScreen(task, index) {
     tdId.textContent = task.id;
     trRow.appendChild(tdId);
     let tdDesc = document.createElement("td");
-    tdDesc.className = "todo-cell";
+    tdDesc.className = "todo-cell task-desc";
     tdDesc.textContent = task.description;
+    handleLineThrough(task, tdDesc);
     trRow.appendChild(tdDesc);
     let tdDate = document.createElement("td");
     tdDate.className = "todo-cell";
