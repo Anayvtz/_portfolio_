@@ -18,24 +18,24 @@ let winPredicate = [
 class Winner {
     player;
     numOfPlayers;
-    #date;
-    #time;
+    date;
+    time;
 
     constructor(player, numOfPlayers) {
         this.player = player;
         this.numOfPlayers = numOfPlayers;
-        this.#date = this.date;
-        this.#time = this.time;
+        this.date = this.getDate();
+        this.time = this.getTime();
     }
 
-    get date() {
+    getDate() {
         const date = new Date();
         let currDate = date.getDate();
         let currMonth = date.getMonth() + 1;
         return currDate + "/" + currMonth;
     }
 
-    get time() {
+    getTime() {
         const date = new Date();
         return date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     }
