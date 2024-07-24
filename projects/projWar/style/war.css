@@ -37,3 +37,10 @@ button {
     margin-top: 20px;
     font-size: 20px;
 }
+
+@media (max-width:576px) {
+    .player-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
